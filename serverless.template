@@ -23,11 +23,12 @@
 
   "Resources" : {
 
-    "ProxyFunction" : {
+    "GetRankURL" : {
       "Type" : "AWS::Serverless::Function",
       "Properties": {
-        "Handler": "WordRankerAPIServerless::WordRankerAPIServerless.LambdaEntryPoint::FunctionHandlerAsync",
+        "Handler": "WordRankerAPIServerless::WordRankerAPIServerless.Functions::GetRankURL",
         "Runtime": "dotnetcore2.0",
+		"Description": "Function to rank words in a URL",
         "CodeUri": "",
         "MemorySize": 256,
         "Timeout": 30,

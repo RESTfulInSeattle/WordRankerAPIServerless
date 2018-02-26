@@ -4,8 +4,8 @@ namespace WordRankerAPIServerless.Controllers
 {
     public class WordRankerController
     {
-        private string queueURL = "https://sqs.us-west-2.amazonaws.com/792614619693/Assignment3-Queue";
-        public string RankURL(string url)
+        private static string queueURL = "https://sqs.us-west-2.amazonaws.com/792614619693/Assignment3-Queue";
+        public static string RankURL(string url)
         {
             if (url.Length > 0)
             {
